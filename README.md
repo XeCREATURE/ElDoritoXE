@@ -1,2 +1,2 @@
 # ElDoritoXE
-NULL
+Contains any changes made outside the ElDorito repo.
