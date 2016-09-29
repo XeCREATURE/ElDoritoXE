@@ -1,0 +1,28 @@
+--Port_MS25_Armor--
+
+--Armor--
+matchtags HO_MS25_Matched.csv maps\tags.dat
+convert 0x1003 HO_MS25_Matched.csv HO_MS25_Converted.csv maps\
+convert 0x1004 HO_MS25_Matched.csv HO_MS25_Converted.csv maps\
+convert 0x1005 HO_MS25_Matched.csv HO_MS25_Converted.csv maps\
+convert 0x1006 HO_MS25_Matched.csv HO_MS25_Converted.csv maps\
+convert 0x1007 HO_MS25_Matched.csv HO_MS25_Converted.csv maps\
+convert 0x1008 HO_MS25_Matched.csv HO_MS25_Converted.csv maps\
+convert 0x1009 HO_MS25_Matched.csv HO_MS25_Converted.csv maps\
+convert 0x100A HO_MS25_Matched.csv HO_MS25_Converted.csv maps\
+convert 0x100B HO_MS25_Matched.csv HO_MS25_Converted.csv maps\
+convert 0x100C HO_MS25_Matched.csv HO_MS25_Converted.csv maps\
+convert 0x100D HO_MS25_Matched.csv HO_MS25_Converted.csv maps\
+
+--Armor_FP--
+convert 0x100E HO_MS25_Matched.csv HO_MS25_Converted.csv maps\
+convert 0x100F HO_MS25_Matched.csv HO_MS25_Converted.csv maps\
+convert 0x1010 HO_MS25_Matched.csv HO_MS25_Converted.csv maps\
+convert 0x1011 HO_MS25_Matched.csv HO_MS25_Converted.csv maps\
+convert 0x1012 HO_MS25_Matched.csv HO_MS25_Converted.csv maps\
+convert 0x1013 HO_MS25_Matched.csv HO_MS25_Converted.csv maps\
+convert 0x1014 HO_MS25_Matched.csv HO_MS25_Converted.csv maps\
+convert 0x1015 HO_MS25_Matched.csv HO_MS25_Converted.csv maps\
+convert 0x1016 HO_MS25_Matched.csv HO_MS25_Converted.csv maps\
+convert 0x1017 HO_MS25_Matched.csv HO_MS25_Converted.csv maps\
+exit
