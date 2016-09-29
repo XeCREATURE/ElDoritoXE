@@ -1,0 +1,47 @@
+[Method]
+
+Go to 22AAFFC. "Tag Index Table"
+
+Reverse the 4 Bytes. (0000A1A2) --> (A2A10000).
+
+(4 * Tag 1348) + A2A10000 = New Address
+
+Go to the New Address.
+
+Reverse the 4 Bytes. (B2B10000) --> (0000B1B2).
+
+Go to 22AAFF8. "Tag Address Table"
+
+Reverse the 4 Bytes. (0000C1C2) --> (C2C10000).
+
+(4 * 0000B1B2) + C2C10000 = New Address
+
+Go to the New Address.
+
+Reverse the 4 Bytes. (ABCDEF01) --> (01EFCDAB).
+
+This is the Address for the TAG 1348.
+
+Now find the Address of the 2nd EFFE.
+
+EFFE Address - 01EFCDAB = Size
+
+Now just add the Size to the end of your pointer.
+
+
+Note: Base TAG Pointer is always 22AAFF8 > (4 * 0000B1B2).
+
+
+[Ptr Example]
+
+(4 * 00001348) + 0EDF0000 = EDF4D20
+
+(4 * 00001282) + 0EE30000 = EE34A08
+
+= 10D52424 --> Ptr 22AAFF8 > 4A08
+
+Add Ptr to EFFE in Ptr to TAG 1348.
+
+10C83090 - 10D52424 = C6C
+
+--> PTR 22AAFF8 > 4A08 > C6C
