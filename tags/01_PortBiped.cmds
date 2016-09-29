@@ -1,0 +1,6 @@
+--Port_MS30_Biped--
+
+--Biped_Mp--
+matchtags HO_MS30_Matched.csv maps\tags.dat
+convert 0x010F HO_MS30_Matched.csv HO_MS30_Converted.csv maps\
+exit
