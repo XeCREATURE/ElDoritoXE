@@ -1,0 +1,394 @@
+[Method]
+
+Open console and use the "info" command.
+
+Scroll up until you get the TlsOffset.
+
+TlsOffset + SectionOffset = New Address
+
+Go to the New Address.
+
+Reverse the 4 Bytes. (ABCDEF01) --> (01EFCDAB).
+
+This is the Address for the Section in Globals.
+
+
+[Sections]
+
+| Simulation gamestate entities||0x8||||0x471D53||
+|-
+| Timing samples||0xC||||0x506265||
+|-
+| Timing samples 2||0x10||||0x5062A8||
+|-
+| Main timing||0x14||||0x507F58||
+|-
+| Game state header||||0x238DB18||0x510C0C||
+|-
+| Random math globals||0x34||||0x51F0E6||
+|-
+| Game globals||0x3C||||0x531566||
+|-
+| Players globals||0x44||||0x542323||
+|-
+| Game engine globals||0x48||||0x5510A1||
+|-
+| Local game engine globals||0x4C||||0x5510E4||
+|-
+| Game time globals||0x50||||0x564F02||
+|-
+| Breakable surface globals||0x54||||0x56B725||
+|-
+| Breakable surface set broken events||0x58||||0x56B743||
+|-
+| Player mapping globals||0x5C||||0x589D25||
+|-
+| Director globals||0x60||||0x591C85||
+|-
+| Director scripting||0x64||||0x591CC5||
+|-
+| Hs runtime globals||0x6C||||0x5979AF||
+|-
+| Effect lightprobes||0xB8||||0x5BC805||
+|-
+| Effect counts||0xAC||||0x5BC845||
+|-
+| Effect messaging queue||0xB4||||0x5BC888||
+|-
+| Havok gamestate||0xBC||||0x5C5C0D||
+|-
+| Player control globals||0xC4||||0x5D2F25||
+|-
+| Player control globals deterministic||0xC8||||0x5D2F68||
+|-
+| Game sound globals||0xD0||||0x5D9375||
+|-
+| Game sound scripted impluses||0xD4||||0x5D93B8||
+|-
+| S structure seam globals||0xD8||||0x5F4995||
+|-
+| Visibility active portals||0xDC||||0x5F9E65||
+|-
+| Campaign meta-game globals||0xE0||||0x607CB5||
+|-
+| Observer globals||0xE8||||0x6128F5||
+|-
+| Observer gamestate globals||0xE4||||0x612935||
+|-
+| Rumble||0xEC||||0x615735||
+|-
+| Bink game state||0xF0||||0x616AFE||
+|-
+| Sound classes||0xFC||||0x6612F5||
+|-
+| Game allegiance globals||0x100||||0x670255||
+|-
+| Atmosphere fog globals||0x104||||0x673852||
+|-
+| Soft surface globals||0x108||||0x674C82||
+|-
+| Game sound palyer effects globals||0x10C||||0x678662||
+|-
+| Cinematic globals||0x324||||0x67D2D2||
+|-
+| Cinematic new globals||0x320||||0x67D586||
+|-
+| Cinematic light globals||0x328||||0x67D5E6||
+|-
+| Physics constants||0x32C||||0x6816E3||
+|-
+| Game save globals||0x334||||0x682532||
+|-
+| Player effects||0x33C||||0x684A35||
+|-
+| Scenario interpolator||0x340||||0x6888B5||
+|-
+| Survival mode globals||0x344||||0x689175||
+|-
+| Player graining globals||0x348||||0x689BC8||
+|-
+| Kill trigger volume state||0x34C||||0x68C595||
+|-
+| Deterministic game sound globals||0x350||||0x68CC15||
+|-
+| Decal counts||0x358||||0x693252||
+|-
+| Decal messaging queue||0x360||||0x693298||
+|-
+| Impact globals||0x364||||0x699034||
+|-
+| Scripted camera globals||0x378||||0x72D235||
+|-
+| Rasterizer game states||0x3BC||||0xA20414||
+|-
+| Hue saturation control||0x3C0||||0xA2048F||
+|-
+| Render hud globals||0x3CC||||0xA2DB85||
+|-
+| Interaction ripples||0x3D0||||0xA35DAB||
+|-
+| Render texture globals||0x3D4||||0xA3AD02||
+|-
+| Render game globals||0x3D8||||0xA3E785||
+|-
+| Depth of field globals||0x3DC||||0xA3ED02||
+|-
+| Particle emitter gpu 1||0x3EC||||0xA4CEE8||
+|-
+| Particle emitter gpu 2||0x3F8||||0xA515B8||
+|-
+| Particle emitter gpu 3||0x404||||0xA576E8||
+|-
+| Particle emitter gpu 4||0x410||||0xA5D178||
+|-
+| Impact geometry rasterizer data||0x414||||0xA74358||
+|-
+| Render object globals||0x418||||0xA78178||
+|-
+| Persistent user data chud||0x424||||0xA8D105||
+|-
+| Persistent user data chud 2||0x420||||0xA8D19A||
+|-
+| Fp weapons||0x43C||||0xA9EA15||
+|-
+| Fp orientations||0x438||||0xA9EA58||
+|-
+| Cortana effect chud||0x440||||0xABEB85||
+|-
+| Campaign objectives||0x444||||0xAC4802||
+|-
+| Object name list||0x454||||0xB30225||
+|-
+| Object render data||0x474||||0xB36001||
+|-
+| Object globals||0x44C||||0xB36046||
+|-
+| Object messaging queue||0x458||||0xB360AA||
+|-
+| Collideable object||0x45C||||0xB360FE||
+|-
+| Noncollideable object||0x468||||0xB36120||
+|-
+| Light||0x4A0||||0xB9E8B1||
+|-
+| Damage globals||0x478||||0xB506F5||
+|-
+| Object placement globals||0x47C||||0xB59E48||
+|-
+| Object scripting||0x484||||0xB95D05||
+|-
+| Object broadphase globals||0x488||||0xB96ED9||
+|-
+| Object early movers||0x48C||||0xB98A55||
+|-
+| Object schedule globals||0x490||||0xB99EC5||
+|-
+| Nondeterministic render light data||0x4AC||||0xB9E839||
+|-
+| Lights globals||0x49C||||0xB9E879||
+|-
+| Recycling volumes||0x4B4||||0xBBA083||
+|-
+| Actor firing-position||0x520||||0x142FE64||
+|-
+| Ai reference frame||0x524||||0x142FE26||
+|-
+| Ai globals||0x528||||0x1433ED5||
+|-
+| Ai player state globals||0x52C||||0x14364F5||
+|-
+| Vocalization timers||0x534||||0x1438245||
+|-
+| Task records||0x540||||0x144A820||
+|-
+| Swarm spawner||0x550||||0x1498670||
+|-
+| Spawner globals||0x554||||0x14986B0||
+|-
+| Vision mode globals||0x57C||||0x14E3C75||
+|-
+| Players||0x40||||0x5422E3||
+|-
+| Campaigns||||0x189E2D4||0x54C144||
+|-
+| Campaign levels||||0x189E2D8||0x54C162||
+|-
+| Campaign insertions||||0x189E2DC||0x54C180||
+|-
+| Multiplayer levels||||0x189E2E0||0x54C1A1||
+|-
+| Shared file handles||||||0x561BAC||
+|-
+| Breakable surface set||0x58||||0x56B743||
+|-
+| Deterministic hs thread||0x68||||0x5978F7||
+|-
+| Tracking hs thread||0x78||||0x597915||
+|-
+| Nondeterministic hs thread||0x7C||||0x597933||
+|-
+| Hs globals||0x70||||0x597951||
+|-
+| Hs distributed globals||0x74||||0x597972||
+|-
+| Effect||0xA0||||0x5BC768||
+|-
+| Effect event||0xA4||||0x5BC786||
+|-
+| Effect location||0xA8||||0x5BC7A4||
+|-
+| Effect geometry sample||0xB0||||0x5BC7C2||
+|-
+| Object looping sounds||0xCC||||0x5D9335||
+|-
+| Havok components||||0x2446080||||
+|-
+| Predicted data||||||0x65AB75||
+|-
+| Font character hash table||||||0x65ABAA||
+|-
+| Xbox sound||||0x2497CF8||0x6600A4||
+|-
+| Havok proxies||0x110||||0x67A4F0||
+|-
+| Recorded animations||0x330||||0x681F23||
+|-
+| Screen effect||0x338||||0x683020||
+|-
+| Decal system||0x354||||0x693215||
+|-
+| decal||0x35C||||0x693506||
+|-
+| impacts||0x368||||0x698FD3||
+|-
+| Impact arrays||0x36C||||0x698FF1||
+|-
+| Object list header||0x370||||0x6EAE00||
+|-
+| Particles||0x37C||||0x74E0A3||
+|-
+| Particle system||0x380||||0x74F413||
+|-
+| contrail||0x38C||||0x7567B1||
+|-
+| Contrail 2||0x388||||0x756713||
+|-
+| Contrail profile||0x390||||0x7567EA||
+|-
+| Contrail system||0x384||||0x756793||
+|-
+| Particle location||0x394||||0x758113||
+|-
+| Light volume||0x39C||||0x75A021||
+|-
+| Light volume 2||0x3A0||||0x75A03F||
+|-
+| Light volume system||0x398||||0x75A003||
+|-
+| beam||0x3AC||||0x75BC11||
+|-
+| Beam 2||0x3A8||||0x75BC2F||
+|-
+| Beam system||0x3A4||||0x75BBF3||
+|-
+| ragdolls||0x3B4||||0x765AA3||
+|-
+| Particle emitter||0x3B8||||0x9EFAA6||
+|-
+| Cached object render states||0x3E0||||0xA452C6||
+|-
+| Particle emitter gpu||0x3E8||||0xA4CE60||
+|-
+| Particle emitter gpu row||0x3E4||||0xA4CE7E||
+|-
+| Beam gpu||0x3F0||||0xA51530||
+|-
+| Beam gpu row||0x3F4||||0xA5154E||
+|-
+| Contrail gpu||0x400||||0xA57660||
+|-
+| Contrail gpu row||0x3FC||||0xA5767E||
+|-
+| Light volume gpu||0x408||||0xA5D0F0||
+|-
+| Light volume gpu row||0x40C||||0xA5D10E||
+|-
+| textures||||0x5215C28||0xA6E9D4||
+|-
+| Dynamic render targets||||0x5242674||||
+|-
+| Shield render cache message||0x41C||||0xA7C570||
+|-
+| Chud widgets||0x428||||0xA8D065||
+|-
+| Chud widgets 2||0x42C||||0xA8D083||
+|-
+| Chud widgets 3||0x430||||0xA8D0A1||
+|-
+| Chud widgets 4||0x434||||0xA8D0BF||
+|-
+| Active screens list||||||0xAAB9D4||
+|-
+| Gui bitmap storage||||||0xAE53D8||
+|-
+| object||0x448||||0xB35F98||
+|-
+| Device groups||0x480||||0xB94E43||
+|-
+| Object activation regions||0x494||||0xB9A5E3||
+|-
+| lights||0x498||||0xB9E7F6||
+|-
+| Widget||0x4B0||||0xB9FD02||
+|-
+| Recycling group||0x4B8||||0xBBA043||
+|-
+| muffin||0x4BC||||0xBC7213||
+|-
+| Leaf system||0x4C0||||0xBD9633||
+|-
+| antenna||0x4C4||||0xBDC500||
+|-
+| cloth||0x4C8||||0xBDDE73||
+|-
+| actor||0x51C||||0x142FDE6||
+|-
+| Vocalization records||0x530||||0x1438260||
+|-
+| Command scripts||0x538||||0x1444343||
+|-
+| objectives||0x53C||||0x144A7E0||
+|-
+| squad||0x544||||0x1493D1C||
+|-
+| Squad group||0x548||||0x1493D3A||
+|-
+| swarm||0x54C||||0x1498630||
+|-
+| Dynamic firing points||0x558||||0x14A5B13||
+|-
+| prop||0x560||||0x14A8F96||
+|-
+| Prop ref||0x55C||||0x14A8FB4||
+|-
+| Tracking||0x564||||0x14A8FD2||
+|-
+| Joint state||0x568||||0x14A9F53||
+|-
+| Clump||0x56C||||0x14AEAC3||
+|-
+| Squad patrol||0x570||||0x14BA663||
+|-
+| flocks||0x574||||0x14C3D30||
+|-
+| Formations||0x578||||0x14C6F43||
+|-
+| Objects||0x450||||0xB35FB4||
+|-
+| Xoverlapped memory pool||||0x2497D60||0x66D682||
+|-
+| Fallback optional cache memory pool||||||0x945FC7||
+|-
+| Ui memory pool||||0x526979C||||
+|-
+| List object||0x374||||0x6EAE1C||
