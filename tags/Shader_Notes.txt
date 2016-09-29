@@ -1,0 +1,16 @@
+#15E5 Setup
+
+Texture 0 Diffuse
+Texture 1 Grey2
+Texture 2 Color
+Texture 3 Bump
+Texture 4 Diffuse
+Texture 5 Bump
+Texture 6 Null
+
+#Original Fix
+
+Change Texture 1 Grey2 
+to color_white (02B9).
+
+Still breaks on Guardian.
