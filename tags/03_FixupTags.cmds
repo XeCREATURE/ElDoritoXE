@@ -1,0 +1,350 @@
+--Fixup_MS23_Tags--
+
+--Base_Shaders--
+duplicate 0x15E5
+duplicate 0x15E5
+duplicate 0x15E5
+duplicate 0x15E5
+duplicate 0x15E5
+
+--Armor2_Shaders--
+duplicate 0x15E5
+duplicate 0x15E5
+duplicate 0x15E5
+duplicate 0x15E5
+duplicate 0x15E5
+
+--Armor3_Shaders--
+duplicate 0x15E5
+duplicate 0x15E5
+duplicate 0x15E5
+duplicate 0x15E5
+duplicate 0x15E5
+
+--Base_FP_Shaders--
+duplicate 0x15E5
+
+--Armor2_FP_Shaders--
+duplicate 0x15E5
+
+--Armor3_FP_Shaders--
+duplicate 0x15E5
+
+--Biped_Mp--
+edit 0x01E2
+setField Model 0x70EF
+SaveChanges
+exit
+
+--Biped_Ui--
+#edit 0x01E4
+#setField Model 0x70EF
+#SaveChanges
+#exit
+
+--Biped_Mannequin--
+edit 0x01E6
+setField Model 0x70EF
+SaveChanges
+exit
+
+--Biped_Podium--
+#edit 0x01E8
+#setField Model 0x70EF
+#SaveChanges
+#exit
+
+--Base_Hlmt--
+edit 0x7305
+setField CollisionRegions[2].Name legs
+setField CollisionRegions[2].Permutations[0].Name base
+setField CollisionRegions[3].Name arms
+setField CollisionRegions[3].Permutations[0].Name base
+setField CollisionRegions[7].Name pelvis
+setField CollisionRegions[7].Permutations[0].Name base
+SaveChanges
+exit
+
+--Base_Mode--
+edit 0x7306
+setField Regions[2].Name legs
+setField Regions[2].Permutations[0].Name base
+setField Regions[3].Name arms
+setField Regions[3].Permutations[0].Name base
+setField Regions[7].Name pelvis
+setField Regions[7].Permutations[0].Name base
+setField Materials[0].RenderMethod 0x7A51
+setField Materials[1].RenderMethod 0x7130
+setField Materials[2].RenderMethod 0x7A52
+setField Materials[3].RenderMethod 0x7A53
+setField Materials[4].RenderMethod 0x7A54
+setField Materials[5].RenderMethod 0x7A55
+setField Materials[6].RenderMethod null
+SaveChanges
+exit
+
+--Base_Rmsh_0--
+edit 0x7A51
+setField ShaderProperties[0].ShaderMaps[0].Bitmap 0x7345
+setField ShaderProperties[0].ShaderMaps[1].Bitmap 0x730B
+setField ShaderProperties[0].ShaderMaps[2].Bitmap 0x7347
+setField ShaderProperties[0].ShaderMaps[3].Bitmap 0x7346
+setField ShaderProperties[0].ShaderMaps[4].Bitmap 0x7345
+setField ShaderProperties[0].ShaderMaps[5].Bitmap 0x7346
+setField ShaderProperties[0].ShaderMaps[6].Bitmap null
+SaveChanges
+exit
+
+--Base_Rmsh_2--
+edit 0x7A52
+setField ShaderProperties[0].ShaderMaps[0].Bitmap 0x7356
+setField ShaderProperties[0].ShaderMaps[1].Bitmap 0x730B
+setField ShaderProperties[0].ShaderMaps[2].Bitmap 0x7358
+setField ShaderProperties[0].ShaderMaps[3].Bitmap 0x7357
+setField ShaderProperties[0].ShaderMaps[4].Bitmap 0x7356
+setField ShaderProperties[0].ShaderMaps[5].Bitmap 0x7357
+setField ShaderProperties[0].ShaderMaps[6].Bitmap null
+SaveChanges
+exit
+
+--Base_Rmsh_3--
+edit 0x7A53
+setField ShaderProperties[0].ShaderMaps[0].Bitmap 0x735A
+setField ShaderProperties[0].ShaderMaps[1].Bitmap 0x730B
+setField ShaderProperties[0].ShaderMaps[2].Bitmap 0x735C
+setField ShaderProperties[0].ShaderMaps[3].Bitmap 0x735B
+setField ShaderProperties[0].ShaderMaps[4].Bitmap 0x735A
+setField ShaderProperties[0].ShaderMaps[5].Bitmap 0x735B
+setField ShaderProperties[0].ShaderMaps[6].Bitmap null
+SaveChanges
+exit
+
+--Base_Rmsh_4--
+edit 0x7A54
+setField ShaderProperties[0].ShaderMaps[0].Bitmap 0x735E
+setField ShaderProperties[0].ShaderMaps[1].Bitmap 0x730B
+setField ShaderProperties[0].ShaderMaps[2].Bitmap 0x7360
+setField ShaderProperties[0].ShaderMaps[3].Bitmap 0x735F
+setField ShaderProperties[0].ShaderMaps[4].Bitmap 0x735E
+setField ShaderProperties[0].ShaderMaps[5].Bitmap 0x735F
+setField ShaderProperties[0].ShaderMaps[6].Bitmap null
+SaveChanges
+exit
+
+--Base_Rmsh_5--
+edit 0x7A55
+setField ShaderProperties[0].ShaderMaps[0].Bitmap 0x7362
+setField ShaderProperties[0].ShaderMaps[1].Bitmap 0x730B
+setField ShaderProperties[0].ShaderMaps[2].Bitmap 0x7364
+setField ShaderProperties[0].ShaderMaps[3].Bitmap 0x7363
+setField ShaderProperties[0].ShaderMaps[4].Bitmap 0x7362
+setField ShaderProperties[0].ShaderMaps[5].Bitmap 0x7363
+setField ShaderProperties[0].ShaderMaps[6].Bitmap null
+SaveChanges
+exit
+
+--Armor2_Mode--
+edit 0x73CE
+setField Materials[0].RenderMethod 0x7A56
+setField Materials[1].RenderMethod 0x7A57
+setField Materials[2].RenderMethod 0x7A58
+setField Materials[3].RenderMethod 0x7A59
+setField Materials[4].RenderMethod 0x7A5A
+setField Materials[5].RenderMethod null
+SaveChanges
+exit
+
+--Armor2_Rmsh_0--
+edit 0x7A56
+setField ShaderProperties[0].ShaderMaps[0].Bitmap 0x740D
+setField ShaderProperties[0].ShaderMaps[1].Bitmap 0x730B
+setField ShaderProperties[0].ShaderMaps[2].Bitmap 0x740F
+setField ShaderProperties[0].ShaderMaps[3].Bitmap 0x740E
+setField ShaderProperties[0].ShaderMaps[4].Bitmap 0x740D
+setField ShaderProperties[0].ShaderMaps[5].Bitmap 0x740E
+setField ShaderProperties[0].ShaderMaps[6].Bitmap null
+SaveChanges
+exit
+
+--Armor2_Rmsh_1--
+edit 0x7A57
+setField ShaderProperties[0].ShaderMaps[0].Bitmap 0x7415
+setField ShaderProperties[0].ShaderMaps[1].Bitmap 0x730B
+setField ShaderProperties[0].ShaderMaps[2].Bitmap 0x7417
+setField ShaderProperties[0].ShaderMaps[3].Bitmap 0x7416
+setField ShaderProperties[0].ShaderMaps[4].Bitmap 0x7415
+setField ShaderProperties[0].ShaderMaps[5].Bitmap 0x7416
+setField ShaderProperties[0].ShaderMaps[6].Bitmap null
+SaveChanges
+exit
+
+--Armor2_Rmsh_2--
+edit 0x7A58
+setField ShaderProperties[0].ShaderMaps[0].Bitmap 0x7419
+setField ShaderProperties[0].ShaderMaps[1].Bitmap 0x730B
+setField ShaderProperties[0].ShaderMaps[2].Bitmap 0x741B
+setField ShaderProperties[0].ShaderMaps[3].Bitmap 0x741A
+setField ShaderProperties[0].ShaderMaps[4].Bitmap 0x7419
+setField ShaderProperties[0].ShaderMaps[5].Bitmap 0x741A
+setField ShaderProperties[0].ShaderMaps[6].Bitmap null
+SaveChanges
+exit
+
+--Armor2_Rmsh_3--
+edit 0x7A59
+setField ShaderProperties[0].ShaderMaps[0].Bitmap 0x741D
+setField ShaderProperties[0].ShaderMaps[1].Bitmap 0x730B
+setField ShaderProperties[0].ShaderMaps[2].Bitmap 0x741F
+setField ShaderProperties[0].ShaderMaps[3].Bitmap 0x741E
+setField ShaderProperties[0].ShaderMaps[4].Bitmap 0x741D
+setField ShaderProperties[0].ShaderMaps[5].Bitmap 0x741E
+setField ShaderProperties[0].ShaderMaps[6].Bitmap null
+SaveChanges
+exit
+
+--Armor2_Rmsh_4--
+edit 0x7A5A
+setField ShaderProperties[0].ShaderMaps[0].Bitmap 0x7421
+setField ShaderProperties[0].ShaderMaps[1].Bitmap 0x730B
+setField ShaderProperties[0].ShaderMaps[2].Bitmap 0x7423
+setField ShaderProperties[0].ShaderMaps[3].Bitmap 0x7422
+setField ShaderProperties[0].ShaderMaps[4].Bitmap 0x7421
+setField ShaderProperties[0].ShaderMaps[5].Bitmap 0x7422
+setField ShaderProperties[0].ShaderMaps[6].Bitmap null
+SaveChanges
+exit
+
+--Armor3_Mode--
+edit 0x742C
+setField Materials[0].RenderMethod 0x7A5B
+setField Materials[1].RenderMethod 0x7A5C
+setField Materials[2].RenderMethod 0x7A5D
+setField Materials[3].RenderMethod 0x7A5E
+setField Materials[4].RenderMethod 0x7A5F
+setField Materials[5].RenderMethod null
+SaveChanges
+exit
+
+--Armor3_Rmsh_0--
+edit 0x7A5B
+setField ShaderProperties[0].ShaderMaps[0].Bitmap 0x746B
+setField ShaderProperties[0].ShaderMaps[1].Bitmap 0x730B
+setField ShaderProperties[0].ShaderMaps[2].Bitmap 0x746D
+setField ShaderProperties[0].ShaderMaps[3].Bitmap 0x746C
+setField ShaderProperties[0].ShaderMaps[4].Bitmap 0x746B
+setField ShaderProperties[0].ShaderMaps[5].Bitmap 0x746C
+setField ShaderProperties[0].ShaderMaps[6].Bitmap null
+SaveChanges
+exit
+
+--Armor3_Rmsh_1--
+edit 0x7A5C
+setField ShaderProperties[0].ShaderMaps[0].Bitmap 0x7472
+setField ShaderProperties[0].ShaderMaps[1].Bitmap 0x730B
+setField ShaderProperties[0].ShaderMaps[2].Bitmap 0x7474
+setField ShaderProperties[0].ShaderMaps[3].Bitmap 0x7473
+setField ShaderProperties[0].ShaderMaps[4].Bitmap 0x7472
+setField ShaderProperties[0].ShaderMaps[5].Bitmap 0x7473
+setField ShaderProperties[0].ShaderMaps[6].Bitmap null
+SaveChanges
+exit
+
+--Armor3_Rmsh_2--
+edit 0x7A5D
+setField ShaderProperties[0].ShaderMaps[0].Bitmap 0x7476
+setField ShaderProperties[0].ShaderMaps[1].Bitmap 0x730B
+setField ShaderProperties[0].ShaderMaps[2].Bitmap 0x7478
+setField ShaderProperties[0].ShaderMaps[3].Bitmap 0x7477
+setField ShaderProperties[0].ShaderMaps[4].Bitmap 0x7476
+setField ShaderProperties[0].ShaderMaps[5].Bitmap 0x7477
+setField ShaderProperties[0].ShaderMaps[6].Bitmap null
+SaveChanges
+exit
+
+--Armor3_Rmsh_3--
+edit 0x7A5E
+setField ShaderProperties[0].ShaderMaps[0].Bitmap 0x747D
+setField ShaderProperties[0].ShaderMaps[1].Bitmap 0x730B
+setField ShaderProperties[0].ShaderMaps[2].Bitmap 0x747F
+setField ShaderProperties[0].ShaderMaps[3].Bitmap 0x747E
+setField ShaderProperties[0].ShaderMaps[4].Bitmap 0x747D
+setField ShaderProperties[0].ShaderMaps[5].Bitmap 0x747E
+setField ShaderProperties[0].ShaderMaps[6].Bitmap null
+SaveChanges
+exit
+
+--Armor3_Rmsh_4--
+edit 0x7A5F
+setField ShaderProperties[0].ShaderMaps[0].Bitmap 0x7481
+setField ShaderProperties[0].ShaderMaps[1].Bitmap 0x730B
+setField ShaderProperties[0].ShaderMaps[2].Bitmap 0x7483
+setField ShaderProperties[0].ShaderMaps[3].Bitmap 0x7482
+setField ShaderProperties[0].ShaderMaps[4].Bitmap 0x7481
+setField ShaderProperties[0].ShaderMaps[5].Bitmap 0x7482
+setField ShaderProperties[0].ShaderMaps[6].Bitmap null
+SaveChanges
+exit
+
+--Base_FP_Mode--
+edit 0x7762
+setField Materials[0].RenderMethod 0x7A60
+SaveChanges
+exit
+
+--Base_FP_Rmsh_0--
+edit 0x7A60
+setField ShaderProperties[0].ShaderMaps[0].Bitmap 0x77A1
+setField ShaderProperties[0].ShaderMaps[1].Bitmap 0x730B
+setField ShaderProperties[0].ShaderMaps[2].Bitmap 0x77A2
+setField ShaderProperties[0].ShaderMaps[3].Bitmap 0x77A3
+setField ShaderProperties[0].ShaderMaps[4].Bitmap 0x77A1
+setField ShaderProperties[0].ShaderMaps[5].Bitmap 0x77A3
+setField ShaderProperties[0].ShaderMaps[6].Bitmap null
+SaveChanges
+exit
+
+--Armor2_FP_Mode--
+edit 0x77FF
+setField Materials[0].RenderMethod 0x7A61
+SaveChanges
+exit
+
+--Armor2_FP_Rmsh_0--
+edit 0x7A61
+setField ShaderProperties[0].ShaderMaps[0].Bitmap 0x783E
+setField ShaderProperties[0].ShaderMaps[1].Bitmap 0x730B
+setField ShaderProperties[0].ShaderMaps[2].Bitmap 0x7840
+setField ShaderProperties[0].ShaderMaps[3].Bitmap 0x783F
+setField ShaderProperties[0].ShaderMaps[4].Bitmap 0x783E
+setField ShaderProperties[0].ShaderMaps[5].Bitmap 0x783F
+setField ShaderProperties[0].ShaderMaps[6].Bitmap null
+SaveChanges
+exit
+
+--Armor3_FP_Mode--
+edit 0x7845
+setField Materials[0].RenderMethod 0x7A62
+SaveChanges
+exit
+
+--Armor3_FP_Rmsh_0--
+edit 0x7A62
+setField ShaderProperties[0].ShaderMaps[0].Bitmap 0x7884
+setField ShaderProperties[0].ShaderMaps[1].Bitmap 0x730B
+setField ShaderProperties[0].ShaderMaps[2].Bitmap 0x7886
+setField ShaderProperties[0].ShaderMaps[3].Bitmap 0x7885
+setField ShaderProperties[0].ShaderMaps[4].Bitmap 0x7884
+setField ShaderProperties[0].ShaderMaps[5].Bitmap 0x7885
+setField ShaderProperties[0].ShaderMaps[6].Bitmap null
+SaveChanges
+exit
+
+--Deps--
+dep add 0x0 0x01E2
+dep add 0x0 0x7304
+dep add 0x0 0x73CC
+dep add 0x0 0x742A
+dep add 0x0 0x7762
+dep add 0x0 0x77FF
+dep add 0x0 0x7845
+exit
